@@ -51,9 +51,8 @@ https://makhijafalguni110.github.io
 
 ## Connect With Me
 
-* LinkedIn
-* GitHub
-* LeetCode
+* LinkedIn: https://www.linkedin.com/in/falguni-makhija-6047751b5/
+* LeetCode: https://leetcode.com/u/Falguni_m20/
 * Email: [falgunimakhija110@gmail.com](mailto:falgunimakhija110@gmail.com)
 
 ---
