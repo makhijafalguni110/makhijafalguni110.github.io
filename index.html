@@ -5,50 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Falguni Makhija</title>
+    <meta name="description" content="Falguni Makhija — Software Engineer. Building AI pipelines at CrossBo, ex-Amazon SDE Intern.">
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <div class="bg-glow"></div>
+
     <nav>
-        <div class="logo">Falguni Makhija</div>
+        <div class="logo">FM<span>.</span></div>
 
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#research" class="nav-link">Research</a></li>
+            <li><a href="#leadership" class="nav-link">Leadership</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
     <section id="hero">
 
         <div class="terminal">
 
-            <p>> Who Am I?</p>
+            <div class="terminal-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="path">falguni@portfolio: ~</span>
+            </div>
+
+            <p class="prompt">&gt; whoami</p>
 
             <h1 id="typing"></h1>
 
             <p class="description">
-                Amazon SDE Intern'25 • Fresh Graduate • Problem Solver
+                Software Engineer Intern @ CrossBo &nbsp;•&nbsp; Ex-Amazon SDE Intern &nbsp;•&nbsp; <span id="role-rotator"></span>
             </p>
 
             <br>
 
-            <p>
-                Building scalable systems, exploring distributed architectures,
-                and solving challenging algorithmic problems.
+            <p class="tagline">
+                I like untangling messy problems until they turn into systems that just quietly work.
+                Currently building AI-powered pipelines in hospitality tech.
             </p>
 
             <div class="buttons">
-                <a href="https://drive.google.com/file/d/1Hl-icL9hbvJ3IwWwi50vpmocOUsTUNrR/view?usp=sharing"
-                    target="_blank">Resume</a>
+                <a href="https://drive.google.com/file/d/1Z06SToqlJ1qZK0UuLdszqrIPr_a1ZkOB/view?usp=sharing"
+                    target="_blank" class="btn-primary">Resume</a>
 
                 <a href="https://www.linkedin.com/in/falguni-makhija-6047751b5/" target="_blank">
                     LinkedIn
@@ -65,119 +80,199 @@
                 </a>
             </div>
 
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-num">200+</span>
+                    <span class="stat-label">TPS service migrated</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">~500</span>
+                    <span class="stat-label">LeetCode solved</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">16</span>
+                    <span class="stat-label">CMS collections automated</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">96%</span>
+                    <span class="stat-label">forensic model accuracy</span>
+                </div>
+            </div>
+
         </div>
 
     </section>
 
     <!-- ABOUT -->
-    <section id="about">
+    <section id="about" class="reveal">
 
-        <h2>About</h2>
+        <h2><span class="tag">01.</span> About</h2>
 
         <p>
-            I'm a Computer Science undergraduate at Graphic Era Hill University
-            with interests in software engineering, cloud infrastructure,
-            machine learning, and distributed systems.
+            I'm a final-year Computer Science undergraduate at Graphic Era Hill University,
+            and I like untangling messy problems until they turn into systems that just quietly work.
+        </p>
 
-            Recently, I worked as a Software Development Engineer Intern
-            at Amazon ShipTech as a part of Tier-1 team, where I contributed to large-scale service
-            migrations, cloud security improvements, and automation tooling.
+        <p>
+            At <strong>CrossBo</strong>, I work full-stack across the AI-in-hospitality stack — React and Node
+            on the front end, AWS underneath — building systems that quietly do the boring reading for humans.
+            One pipeline turns messy hotel documents into clean, structured data for our CMS; another turns raw
+            hotel numbers into ready-made reports every night, no manual PowerPoint required.
+        </p>
+
+        <p>
+            Before that, I was at <strong>Amazon</strong>, working on a shipment service that handles 200+
+            transactions every second — migrated it to a new system without anyone downstream noticing, which
+            is the engineering equivalent of swapping a car's engine while it's still driving. I also moved a
+            chunk of our cloud credentials from "hope nothing goes wrong" static keys to auto-rotating ones,
+            because good security should be boring.
+        </p>
+
+        <p>
+            Outside of work, I actually enjoy DSA — 490+ LeetCode problems deep, no one made me do this — and I
+            once built a tool that catches photoshopped images with 96% accuracy, because fake images leave
+            fingerprints if you know where to look.
+        </p>
+
+        <p>
+            Looking for a team that gives me real ownership, good problems, and people worth grabbing coffee
+            with. Food for brain, always appreciated.
         </p>
 
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience">
+    <section id="experience" class="reveal">
 
-        <h2>Experience</h2>
+        <h2><span class="tag">02.</span> Experience</h2>
 
         <div class="card">
 
-            <h3>Amazon — Software Development Engineer Intern</h3>
+            <div class="card-head">
+                <h3>CrossBo — Software Engineer Intern</h3>
+                <p class="period">Jul 2026 — Present</p>
+            </div>
 
-            <p>Jul 2025 - Dec 2025</p>
-            <a href="https://drive.google.com/file/d/124Pvx0H1HwnvGLclohjyqCcnJLAWQST-/view" target="_blank">
-                Letter of completion
-            </a>
+            <p class="role-line">AI in Hospitality · Genie Content Onboarding &amp; Hotel Performance Reporting</p>
 
             <ul>
                 <li>
-                    Migrated a Tier-1 shipment service processing 200+ TPS
-                    from TCDA to TCDS.
+                    Built a full-stack AI extraction pipeline that turns hotel PDFs, images, and spreadsheets
+                    into clean, structured CMS records — then re-architected it into an async system that cut
+                    processing time by nearly 80%.
                 </li>
 
                 <li>
-                    Built consistency-safe migration workflows,
-                    validation systems, and deployment pipelines.
+                    Designed an automated nightly reporting pipeline that pulls hotel performance data from
+                    multiple sources and generates ready-to-send report decks, eliminating manual reporting work.
+                </li>
+            </ul>
+
+            <div class="tags">
+                <span>React</span><span>Node.js</span><span>AWS</span><span>PostgreSQL</span>
+                <span>Directus CMS</span><span>OpenAI</span><span>AWS Lambda</span><span>FastAPI</span>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-head">
+                <h3>Amazon — Software Development Engineer Intern</h3>
+                <p class="period">Jul 2025 — Dec 2025</p>
+            </div>
+
+            <p class="role-line">
+                ShipTech, Tier-1 Team ·
+                <a href="https://drive.google.com/file/d/124Pvx0H1HwnvGLclohjyqCcnJLAWQST-/view" target="_blank">
+                    Letter of completion
+                </a>
+            </p>
+
+            <ul>
+                <li>
+                    Migrated a Tier-1 shipment service processing 200+ TPS from TCDA to TCDS, improving
+                    scalability, consistency, and maintainability.
                 </li>
 
                 <li>
-                    Led S3 Coldstore authentication migration
-                    from IAM Users to IAM Roles.
+                    Built consistency-safe migration workflows, validation systems, and staged deployment
+                    pipelines across AWS environments.
                 </li>
 
                 <li>
-                    Built automation reducing migration effort
-                    from weeks to minutes.
+                    Led S3 Coldstore authentication migration from static IAM Users to rotating IAM Roles,
+                    strengthening infrastructure security.
+                </li>
+
+                <li>
+                    Built a Python automation framework that cut migration effort for 60+ services from
+                    weeks to minutes using LLM-assisted workflows.
                 </li>
 
             </ul>
+
+            <div class="tags">
+                <span>Java</span><span>AWS</span><span>CI/CD</span><span>Distributed Systems</span>
+                <span>IAM</span><span>AWS CDK</span>
+            </div>
 
         </div>
 
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
+    <section id="projects" class="reveal">
 
-        <h2>Projects</h2>
+        <h2><span class="tag">03.</span> Projects</h2>
 
-        <div class="card">
-            <h3>AI Image Forensics</h3>
+        <div class="grid">
 
-            <p>
-                AI-assisted image tampering detection system
-                achieving 96.06% accuracy using Computer Vision
-                and XGBoost.
-            </p>
-        </div>
+            <div class="card">
+                <h3>AI Image Forensics</h3>
 
-        <div class="card">
-            <h3>P2P Serverless Messaging</h3>
+                <p>
+                    AI-assisted image tampering detection system achieving 96.06% accuracy on the CASIA v2
+                    dataset, using ELA, LBP texture analysis, and XGBoost — with a Streamlit interface for
+                    real-time analysis.
+                </p>
 
-            <p>
-                Real-time WebRTC communication platform with
-                sub-300ms latency and serverless file transfer.
-            </p>
-        </div>
+                <div class="tags">
+                    <span>Python</span><span>OpenCV</span><span>XGBoost</span><span>Streamlit</span>
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>Ship-A-Thon Automation</h3>
+            <div class="card">
+                <h3>Ship-A-Thon Automation</h3>
 
-            <p>
-                One-command migration framework enabling
-                TCDA to TCDS onboarding automation.
-            </p>
+                <p>
+                    LLM-assisted, one-command migration framework built during Amazon's internal hackathon,
+                    cutting service onboarding effort from 2–3 weeks to minutes for 60+ services.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span><span>Automation</span><span>LLM Workflows</span>
+                </div>
+            </div>
+
         </div>
 
     </section>
 
     <!-- RESEARCH -->
-    <section id="research">
+    <section id="research" class="reveal">
 
-        <h2>Research</h2>
+        <h2><span class="tag">04.</span> Research</h2>
 
         <div class="card">
 
             <h3>
-                Socio-Economic Effects of AI:
-                Systematic Review & Meta-Analysis
+                Socio-Economic Effects of AI: Systematic Review &amp; Meta-Analysis
             </h3>
 
             <p>
-                Reviewed 85+ studies and analyzed AI's
-                socio-economic impact using quantitative
-                analysis techniques.
+                Published IEEE research paper reviewing 85+ studies to analyze AI's socio-economic impact
+                using quantitative analysis techniques.
             </p>
 
         </div>
@@ -185,64 +280,66 @@
     </section>
 
     <!-- LEADERSHIP -->
-    <section id="leadership">
+    <section id="leadership" class="reveal">
 
-        <h2>Leadership</h2>
+        <h2><span class="tag">05.</span> Leadership</h2>
 
-        <div class="card">
+        <div class="grid">
 
-            <h3>Smart India Hackathon Team Lead</h3>
+            <div class="card">
+                <h3>Smart India Hackathon 2024 — Team Lead</h3>
 
-            <p>
-                Led a 6-member team building a sustainability-focused
-                carbon footprint analysis platform.
-            </p>
+                <p>
+                    Led a 6-member team building a sustainability-focused carbon footprint analysis platform.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>2nd Place — Speech Competition</h3>
+
+                <p>
+                    Secured 2nd place in a college-level speech competition.
+                </p>
+            </div>
 
         </div>
 
     </section>
 
     <!-- CODING -->
-    <section>
+    <section class="reveal">
 
-        <h2>Problem Solving</h2>
+        <h2><span class="tag">06.</span> Problem Solving</h2>
 
         <div class="card">
 
             <h3>Competitive Programming</h3>
 
             <p>
-                Solved 450+ LeetCode problems spanning
-                Graphs, DP, Trees, Binary Search,
-                Sliding Window, and Greedy Algorithms.
+                Solved ~500 LeetCode problems with a 1600+ contest rating, spanning Graphs, DP, Trees,
+                Binary Search, Sliding Window, and Greedy Algorithms.
             </p>
 
         </div>
 
     </section>
 
-    <!-- CURRENTLY LEARNING -->
-    <section>
-
-        <h2>Currently Learning</h2>
-
-        <ul>
-            <li>AWS Ecosystem</li>
-            <li>Spring Boot</li>
-            <li>Development</li>
-        </ul>
-
-    </section>
-
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" class="reveal">
 
-        <h2>Contact</h2>
+        <h2><span class="tag">07.</span> Contact</h2>
 
-        <p>
-            Email:
-            falgunimakhija110@gmail.com
+        <p class="contact-line">
+            Always up for talking systems, good problems, or opportunities worth exploring.
         </p>
+
+        <a class="btn-primary contact-cta" href="mailto:falgunimakhija110@gmail.com">
+            falgunimakhija110@gmail.com
+        </a>
+
+        <footer>
+            <p>Built by Falguni Makhija</p>
+        </footer>
     </section>
 
     <script src="script.js"></script>
